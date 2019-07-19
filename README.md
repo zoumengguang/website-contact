@@ -2,3 +2,5 @@
 MK Decision Interview Challenge
 
 Link: https://jin-zou.s3-us-west-1.amazonaws.com/index.html
+
+Files inside the AWS folder are copies of the Lambda functions required for the challenge. 
