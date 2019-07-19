@@ -13,16 +13,53 @@ class ContactComponent extends Component {
 
   handleSubmit = event => {
     console.log(this.state);
+    const { email, name, message } = this.state;
+
+    fetch(
+      "https://bfo43lnqpb.execute-api.us-west-2.amazonaws.com/dev/entries",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          email: email,
+          name: name,
+          message: message
+        })
+      }
+    )
+      .then(res => res.json())
+      .then(json => {
+        console.log("Response: " + json);
+      })
+      .catch(err => {
+        console.log(err);
+      });
+
+    // clear form
     document.getElementById("contact-form").reset();
     this.setState({ name: "", email: "", message: "" });
     event.preventDefault();
   };
 
   render() {
-    const { name, email, message } = this.state;
-    console.log(
+    //const { name, email, message } = this.state;
+    // Debugging for testing field inputs and GET method
+    /* console.log(
       "name:" + name + "\n" + "email:" + email + "\n" + "msg:" + message
-    );
+    ); */
+    /* fetch(
+      "https://bfo43lnqpb.execute-api.us-west-2.amazonaws.com/dev/entries",
+      {
+        method: "GET"
+      }
+    )
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(console.log); */
     return (
       <Container component="main" maxWidth="xs">
         <h1>Website Contact Form</h1>
