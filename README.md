@@ -3,6 +3,10 @@ MK Decision Interview Challenge
 
 Link: https://jin-zou.s3-us-west-1.amazonaws.com/index.html
 
+* When testing, if the login does not work on a browser, 
+either clear your cookies or use the browser’s equivalent
+of a private browsing function (e.g Incognito for Chrome). 
+
 # Notes
 - Authentication is provided by AWS Amplify's Auth service.
 
