@@ -4,6 +4,10 @@ MK Decision Interview Challenge
 Link: https://jin-zou.s3-us-west-1.amazonaws.com/index.html
 
 # Notes
+- Authentication is provided by AWS Amplify's Auth service.
+
+- Required .env file should be attached to the email.
+
 - Files inside the AWS folder are copies of the Lambda functions required for the challenge. 
 These are purely for ease of reference and are not used in the front end.
 
