@@ -10,8 +10,6 @@ of a private browsing function (e.g Incognito for Chrome).
 # Notes
 - Authentication is provided by AWS Amplify's Auth service.
 
-- Required .env file should be attached to the email.
-
 - Files inside the AWS folder are copies of the Lambda functions required for the challenge. 
 These are purely for ease of reference and are not used in the front end.
 
