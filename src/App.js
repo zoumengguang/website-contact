@@ -1,10 +1,13 @@
 import React from "react";
-import ContactComponent from "./ContactPage/ContactComponent";
+import { BrowserRouter } from "react-router-dom";
+import MainPanel from "./components/MainPanel";
 
 function App() {
   return (
     <div className="App">
-      <ContactComponent />
+      <BrowserRouter>
+        <MainPanel />
+      </BrowserRouter>
     </div>
   );
 }
