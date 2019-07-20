@@ -15,7 +15,6 @@ class ContactComponent extends Component {
   };
 
   handleSubmit = event => {
-    //console.log(this.state);
     const { email, name, message } = this.state;
 
     fetch(

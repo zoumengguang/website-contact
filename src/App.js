@@ -1,13 +1,10 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import MainPanel from "./components/MainPanel";
+import AppWithAuth from "./AppWithAuth";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <MainPanel />
-      </BrowserRouter>
+      <AppWithAuth />
     </div>
   );
 }
